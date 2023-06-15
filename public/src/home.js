@@ -84,7 +84,7 @@ function getMostPopularAuthors(books, authors) {
     popularAuthors.push({ name: `${first} ${last}`, count });
   }
 
-  popularAuthors.sort((a, b) => b.count - a.count);
+  popularAuthors.sort((alpha, beta) => beta.count - alpha.count);
 
   const topAuthors = [];
   const maxLength = popularAuthors.length < 5 ? popularAuthors.length : 5;
