@@ -13,9 +13,9 @@ function sortAccountsByLastName(accounts) {
 }
 //helper function is above ^^^
 
-function compareLastNames(a, b) {
-  const lastNameA = a.name.last.toLowerCase();
-  const lastNameB = b.name.last.toLowerCase();
+function compareLastNames(alpha, beta) {
+  const lastNameA = alpha.name.last.toLowerCase();
+  const lastNameB = beta.name.last.toLowerCase();
 
   if (lastNameA < lastNameB) {
     return -1;
